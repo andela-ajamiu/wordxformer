@@ -1,0 +1,20 @@
+apiVersion: extensions/v1beta1
+
+kind: Deployment
+
+metadata:
+  name: reverse
+
+spec:
+  replicas: 3
+
+  template:
+
+    metadata:
+      labels:
+        name: reverse-pods
+
+    spec:
+      containers:
+      - image: micro-reverse:v1
+        name: reverse-container

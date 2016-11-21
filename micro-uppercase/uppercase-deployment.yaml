@@ -1,0 +1,20 @@
+apiVersion: extensions/v1beta1
+
+kind: Deployment
+
+metadata:
+  name: uppercase
+
+spec:
+  replicas: 3
+
+  template:
+
+    metadata:
+      labels:
+        name: uppercase-pods
+
+    spec:
+      containers:
+      - image: micro-uppercase:v1
+        name: uppercase-container

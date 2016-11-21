@@ -1,0 +1,20 @@
+apiVersion: extensions/v1beta1
+
+kind: Deployment
+
+metadata:
+  name: titlecase
+
+spec:
+  replicas: 3
+
+  template:
+
+    metadata:
+      labels:
+        name: titlecase-pods
+
+    spec:
+      containers:
+      - image: micro-titlecase:v1
+        name: titlecase-container
