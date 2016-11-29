@@ -1,0 +1,23 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: centralgate
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        name: centralgate-pods
+    spec:
+      containers:
+      - image: micro-apigateway:v1
+        name: centralgate-container
+        env:
+        - name: UPPER_CASE_URL
+          value: uppercase-serv
+        - name: LOWER_CASE_URL
+          value: lowercase-serv
+        - name: REVERSE_URL
+          value: reverse-serv
+        - name: TITLE_CASE_URL
+          value: titlecase-serv

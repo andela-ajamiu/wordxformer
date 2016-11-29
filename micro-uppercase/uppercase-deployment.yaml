@@ -3,7 +3,7 @@ apiVersion: extensions/v1beta1
 kind: Deployment
 
 metadata:
-  name: uppercase
+  name: uppercase-dep
 
 spec:
   replicas: 3

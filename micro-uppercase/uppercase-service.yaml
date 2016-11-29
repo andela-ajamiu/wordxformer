@@ -3,7 +3,7 @@ apiVersion: v1
 kind: Service
 
 metadata:
-  name: uppercase
+  name: uppercase-serv
 
 spec:
   ports:
