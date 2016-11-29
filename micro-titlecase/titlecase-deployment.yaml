@@ -3,7 +3,7 @@ apiVersion: extensions/v1beta1
 kind: Deployment
 
 metadata:
-  name: titlecase
+  name: titlecase-dep
 
 spec:
   replicas: 3
