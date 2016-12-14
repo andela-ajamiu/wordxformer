@@ -4,7 +4,7 @@ class MyServlet < WEBrick::HTTPServlet::AbstractServlet
   def do_GET (request, response)
   	if request.query["str"]
       words = request.query["str"]
-		  response.body = words.downcase
+		  response.body = words.downcase + " | " + ENV['HOSTNAME']
 	  else
 		  response.body = "A string parameter is required"
   	end
