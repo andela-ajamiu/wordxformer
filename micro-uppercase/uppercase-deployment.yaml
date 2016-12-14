@@ -16,5 +16,5 @@ spec:
 
     spec:
       containers:
-      - image: micro-uppercase:v1
+      - image: micro-uppercase:1.0
         name: uppercase-container

@@ -17,10 +17,10 @@ class MyServlet < WEBrick::HTTPServlet::AbstractServlet
           address = "http://#{ENV['REVERSE_URL']}"
           redirect_request(address, words, response)
         when "titlecase"
-          address = "http://#{ENV['REVERSE_URL']}"
+          address = "http://#{ENV['TITLE_CASE_URL']}"
           redirect_request(address, words, response)
         when "uppercase"
-          address = "http://#{ENV['REVERSE_URL']}"
+          address = "http://#{ENV['UPPER_CASE_URL']}"
           redirect_request(address, words, response)
         else
           response.body = "This endpoint is not available, please try another endpoint"

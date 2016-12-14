@@ -16,5 +16,5 @@ spec:
 
     spec:
       containers:
-      - image: micro-reverse:v1
+      - image: micro-reverse:1.0
         name: reverse-container

@@ -11,7 +11,7 @@ class MyServlet < WEBrick::HTTPServlet::AbstractServlet
   end
 end
 
-server = WEBrick::HTTPServer.new(:Port => 1111)
-server.mount "/low", MyServlet
-# trap "INT" do server.shutdown end
+server = WEBrick::HTTPServer.new(:Port => 80)
+server.mount "/", MyServlet
+trap "INT" do server.shutdown end
 server.start

@@ -16,5 +16,5 @@ spec:
 
     spec:
       containers:
-      - image: micro-lowercase:v1
+      - image: micro-lowercase:1.0
         name: lowercase-container

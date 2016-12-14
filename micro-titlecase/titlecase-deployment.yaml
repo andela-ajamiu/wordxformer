@@ -16,5 +16,5 @@ spec:
 
     spec:
       containers:
-      - image: micro-titlecase:v1
+      - image: micro-titlecase:1.0
         name: titlecase-container
