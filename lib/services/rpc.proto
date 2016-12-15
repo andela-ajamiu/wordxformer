@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+// define package name of the proto file
+package word_transformer;
+
+// Set up the microservice and define all endpoints with argument and return types
+service micro {
+  rpc LowerCase (Word) returns (Result) {}
+  rpc Reverse (Word) returns (Result) {}
+  rpc TitleCase (Word) returns (Result) {}
+  rpc UpperCase (Word) returns (Result) {}
+}
+
+// define the message formats used by the in the Interface definitions
+message Word {
+  string word = 1;
+}
+
+message Result {
+  string result = 1;
+}
