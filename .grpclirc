@@ -1,0 +1,6 @@
+[default]
+ip = 0.0.0.0
+port = 50009
+dir = ./lib/services
+file = rpc.proto
+insecure = true
